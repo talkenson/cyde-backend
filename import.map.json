@@ -1,0 +1,12 @@
+{
+  "imports": {
+    "$types/": "./src/types/",
+    "@api/": "./src/api/",
+    "@tools/": "./src/tools/",
+    "argon2": "https://deno.land/x/argontwo@0.1.1/mod.ts",
+    "aes": "https://deno.land/x/aes_cfb@1.3/mod.ts",
+    "oak": "https://deno.land/x/oak@v12.1.0/mod.ts",
+    "sqlite": "https://deno.land/x/sqlite@v3.7.0/mod.ts",
+    "sqlb": "https://deno.land/x/sql_builder@v1.9.2/mod.ts"
+  }
+}

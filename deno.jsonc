@@ -1,0 +1,23 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-net --allow-read --allow-write --watch=src/ src/main.ts",
+    "build:m1": "deno compile --target aarch64-apple-darwin --allow-net --allow-read --allow-write --output ./dist/m1/server src/main.ts",
+    "build:linux": "deno compile --target x86_64-unknown-linux-gnu --allow-net --allow-read --allow-write --output ./dist/linux/server src/main.ts",
+    "build:win": "deno compile --target x86_64-pc-windows-msvc --allow-net --allow-read --allow-write --output ./dist/windows/server src/main.ts"
+  },
+  "importMap": "./import.map.json",
+  "fmt": {
+    "options": {
+      "singleQuote": true,
+      "semiColons": false
+    }
+  },
+  "lint": {
+    "files": {
+      "include": ["src/"]
+    },
+    "rules": {
+      "exclude": ["no-unused-vars"]
+    }
+  }
+}
